@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container-header {
+  background-color: #3535ff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+
+.container-header ul {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.container-header li {
+  list-style: none;
+  margin-left: 20px;
+}
+
+.container-header a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.container-header a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  margin-top: 3px;
+  background-color: rgba(255, 255, 255, 0.85);
+  transition: width .4s;
+}
+
+.container-header a:hover::after {
+  width: 100%;
+}
+
+.container-header button {
+  border: none;
+  font-size: 20px;
+  padding: 4px 13px;
+  color: #fff;
+  border-radius: 30px;
+  margin-right: 30px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.btn-sair {
+  background-color: #cb0245;
+}
+
+
+.btn-sair:hover {
+  background-color: #c00040;
+}
+
+.btn-entrar {
+  background-color: #009405;
+}
+
+
+.btn-entrar:hover {
+  background-color: #008805;
+}
+
+.div-container {
+  min-height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.div-table {
+  width: 900px;
+  padding: 30px;
+}
+
+.table {
+  font-size: 20px;
+}
+
+td {
+  background-color: #fff !important;
+  position: relative;
+}
+
+td, th, thead {
+  text-align: center !important;
+  vertical-align: middle !important;
+}
+
+thead th {
+  background-color: #3535ff !important;
+  color: #fff;
+}
+
+.btn-cadastro {
+  border: none;
+  background-color: #3535ff;
+  color: #fff;
+  padding: 8px 13px;
+  font-weight: 500;
+  font-size: 18px !important;
+  border-radius: 30px;
+}
+
+.btn-cadastro:hover {
+  background-color: #3131eb;
+}
+
+.icon {
+  display: block;
+  width: 22px;
+  height: 22px;
+  background-size: 22px;
+  margin: 5px 1px 5px 5px !important;
+  transition: .2s;
+}
+
+.icon:hover {
+  scale: 1.25;
+  transition: .2s;
+}
+
+.delete {
+  background-image: url(../images/delete.png);
+}
+
+.update {
+  background-image: url(../images/update.png);
+}
+
+.div-row {
+  display: flex;
+}
+
+.ud-row {
+  background-color: #f7f7f7 !important;
+}
+
+@media (max-width: 930px) {
+  .div-table {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 730px) {
+  .table {
+    font-size: 18px;
+  }
+}
