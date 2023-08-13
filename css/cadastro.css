@@ -154,21 +154,3 @@
   font-weight: 500;
   user-select: none;
 }
-
-@media (max-height: 900px) {
-  .form-group {
-    width: 500px;
-  }
-  
-  .form-group h1 {
-    font-size: 26px;
-  }
-  
-  .form-group input {
-    padding: 15px 20px;
-  }
-
-  .form-group button {
-    padding: 13px 0px;
-  }
-}

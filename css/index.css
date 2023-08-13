@@ -152,15 +152,3 @@ thead th {
 .ud-row {
   background-color: #f7f7f7 !important;
 }
-
-@media (max-width: 930px) {
-  .div-table {
-    max-width: 100%;
-  }
-}
-
-@media (max-width: 730px) {
-  .table {
-    font-size: 18px;
-  }
-}
